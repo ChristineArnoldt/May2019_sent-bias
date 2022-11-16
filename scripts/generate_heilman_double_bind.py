@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# has to be run from scripts dir
 
 import logging
 import json

@@ -1,6 +1,5 @@
 ''' Helper functions related to loading and saving data '''
 import json
-import numpy as np
 import h5py
 import logging as log
 
@@ -44,29 +43,3 @@ def save_encodings(encodings, enc_file):
             split[CATEGORY] = split_d["category"]
             for ex, enc in split_d["encs"].items():
                 split[ex] = enc
-
-
-def load_jiant_encodings(enc_file, n_header=1, is_openai=False):
-    ''' Load a dumb tsv format of jiant encodings.
-    This is really brittle and makes a lot of assumptions about ordering. '''
-    encs = []
-    last_cat = None
-    with open(enc_file, 'r') as enc_fh:
-        for _ in range(n_header):
-            enc_fh.readline()  # header
-        for row in enc_fh:
-            idx, category, string, enc = row.strip().split('\t')
-            if is_openai:
-                string = " ".join([w.rstrip("</w>") for w in string])
-            enc = [float(n) for n in enc[1:-1].split(',')]
-            # encs[category][string] = np.array(enc)
-            if last_cat is None or last_cat != category:
-                # encs.append([np.array(enc)])
-                encs.append({string: np.array(enc)})
-            else:
-                # encs[-1].append(np.array(enc))
-                encs[-1][string] = np.array(enc)
-            last_cat = category
-            # encs[category].append(np.array(enc))
-
-    return encs

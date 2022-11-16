@@ -55,12 +55,6 @@ ggsave('legend.pdf', width=8, height=9)
 
 ```{r fig.width=7.5,fig.height=16}
 selected_model_options = c(
-   'bow',
-   'infersent',
-   'guse',
-   'gensen;version=nli_large_bothskip_parse,nli_large_bothskip',
-   'elmo;time_combine=mean;layer_combine=add',
-   'openai',
    'bert;version=bert-base-german-cased')
 results %>%
   hb %>%
@@ -72,28 +66,6 @@ results %>%
   scale_fill_brewer(palette=1) +
   theme_bw() +
   theme(axis.text.x=element_text(angle=45, hjust=1))
-```
-
-### WEAT 3-5
-
-```{r}
-results %>%
-  hb %>%
-  mutate(model_options=ifelse(is.na(options), model, str_c(model, ';', options))) %>%
-  filter(str_detect(test, 'weat[3-5]$')) %>%
-  ggplot() +
-  geom_tile(aes(x=model_options, y=test, fill=-log10(p_value))) +
-  theme_bw() +
-  theme(axis.text.x=element_text(angle=45, hjust=1))
-```
-
-```{r}
-results %>%
-  hb %>%
-  mutate(model_options=ifelse(is.na(options), model, str_c(model, ';', options))) %>%
-  filter(str_detect(test, 'weat[3-5]$')) %>%
-  select(model_options, test, p_value) %>%
-  spread(model_options, p_value)
 ```
 
 ### WEAT 7-8
@@ -118,36 +90,6 @@ results %>%
   spread(model_options, p_value)
 ```
 
-### BOW, WEAT word-level
-
-```{r}
-results %>%
-  hb %>%
-  filter(model == 'bow', str_detect(test, '^weat[0-9]+$')) %>%
-  arrange(as.numeric(str_extract(test, '[0-9]+'))) %>%
-  select(test, p_value, effect_size)
-```
-
-### USE, WEAT word-level
-
-```{r}
-results %>%
-  hb %>%
-  filter(model == 'guse', str_detect(test, '^weat[0-9]+$')) %>%
-  arrange(as.numeric(str_extract(test, '[0-9]+'))) %>%
-  select(test, p_value, effect_size)
-```
-
-## Set sizes
-
-```{r}
-results %>%
-  select(test, num_targ1, num_targ2, num_attr1, num_attr2) %>%
-  unique
-```
-
-## Controlling for multiple hypothesis tests
-
 ### Overall
 
 Using Holm-Bonferroni procedure:
@@ -161,22 +103,10 @@ results %>%
 ### Effect sizes of selected models
 
 ```{r}
-model_levels <- c('CBoW', 'InferSent', 'GenSen', 'USE', 'ELMo', 'GPT', 'BERT')
+model_levels <- c('BERT')
 rename_model <- function(model) {
   if (model == 'bert') {
     'BERT'
-  } else if (model == 'bow') {
-    'CBoW'
-  } else if (model == 'elmo') {
-    'ELMo'
-  } else if (model == 'gensen') {
-    'GenSen'
-  } else if (model == 'guse') {
-    'USE'
-  } else if (model == 'infersent') {
-    'InferSent'
-  } else if (model == 'openai') {
-    'GPT'
   } else {
     model
   }
@@ -185,7 +115,6 @@ rename_test <- function(test) {
   test %>%
     str_remove('^sent-') %>%
     str_replace('^heilman_double_bind', 'DB') %>%
-    str_replace('^angry_black_woman_stereotype', 'ABW_stereotype') %>%
     str_replace('^weat', 'Caliskan_') %>%
     str_remove('_one_word$') %>%
     str_remove('_one_sentence$') %>%
@@ -193,16 +122,9 @@ rename_test <- function(test) {
 }
 test_levels <- rev(c(
   'Caliskan 1',
-  'Caliskan 2',
-  'Caliskan 3',
-  'Caliskan 4',
-  'Caliskan 5',
   'Caliskan 6',
   'Caliskan 7',
   'Caliskan 8',
-  'Caliskan 9',
-  'Caliskan 10',
-  'ABW stereotype',
   'DB competent',
   'DB likable'
 ))
@@ -244,39 +166,11 @@ ggsave('significant_effects.png', width=5, height=3.5)
 
 ## Validity
 
-### Validity 1
-
-```{r fig.width=4,fig.height=2.5}
-v1_test_map <- c('Caliskan 5'='16,8',
-                 'Caliskan 4'='16,25',
-                 'Caliskan 3'='32,25')
-results %>%
-  filter(model %in% c('elmo', 'bow'),
-         test %in% c('weat3', 'weat4', 'weat5', 'sent-weat3', 'sent-weat4', 'sent-weat5')) %>%
-  mutate(model_options=ifelse(is.na(options), model, str_c(model, ';', options))) %>%
-  filter(model_options %in% selected_model_options) %>%
-  mutate(sent=str_detect(test, '^sent-'),
-         test=str_remove(test, '^sent-'),
-         level=ifelse(sent, 'sentence-level', 'word-level')) %>%
-  rowwise() %>% 
-  mutate(model=factor(rename_model(model), levels=model_levels),
-         sample_size=factor(v1_test_map[rename_test(test)], v1_test_map)) %>%
-  ggplot(aes(x=sample_size, group=model, colour=model, shape=model, y=p_value)) +
-  geom_line(size=1) +
-  geom_point(size=4) +
-  scale_y_log10() +
-  theme_bw() +
-  theme(axis.text.x=element_text(angle=45, hjust=1)) +
-  facet_grid(. ~ level)
-ggsave('validity_1.png', width=4, height=2.5)
-```
-
-
-### Validity 2
+### Validity
 
 ```{r fig.width=4,fig.height=2.5}
 results %>%
-  filter(model %in% c('bow', 'bert', 'gensen', 'openai'),
+  filter(model %in% c('bert'),
          test %in% c('weat7', 'weat8', 'sent-weat7', 'sent-weat8')) %>%
   mutate(model_options=ifelse(is.na(options), model, str_c(model, ';', options))) %>%
   filter(model_options %in% selected_model_options) %>%

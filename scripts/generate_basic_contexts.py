@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+# has to be run from scripts dir
+
 import logging
 import json
 import os
@@ -448,7 +450,7 @@ def singularize(s):
     return singular
 
 def pluralize(s, case=True): # customized from https://github.com/jarinox/python-grammar-de/blob/master/gmrde/woerterbuch.py
-    dict_path="scripts/data/german.csv" # from https://github.com/jarinox/python-grammar-de
+    dict_path="data/german.csv" # from https://github.com/jarinox/python-grammar-de
     dict_csv = open(dict_path, "r")
     re = csv.reader(dict_csv)
     dict_de = list(re)
@@ -626,7 +628,6 @@ def main():
                         for template in SINGULAR_NOUN_TEMPLATES
                     ]
                     logging.info(toc())
-                    print(sentences[-5:])
                     tic()
                     if term.startswith("Verwandt"):
                         sentences += [
@@ -634,16 +635,13 @@ def main():
                             for template in SINGULAR_NOUN_TEMPLATES
                         ]
                     logging.info(toc())
-                    print(sentences[-5:])
                     
                     tic()
-                    print(plural_term)
                     sentences += [
                         fill_template(template, plural_term)
                         for template in PLURAL_NOUN_TEMPLATES
                     ]
                     logging.info(toc())
-                    print(sentences[-5:])
 
                     if PERSON_RE.search(term) is not None:
                         tic()
@@ -652,7 +650,6 @@ def main():
                             for template in SINGULAR_PERSON_TEMPLATES
                         ]
                         logging.info(toc())
-                        print(sentences[-2:])
 
                         tic()
                         sentences += [
@@ -660,7 +657,6 @@ def main():
                             for template in PLURAL_PERSON_TEMPLATES
                         ]
                         logging.info(toc())
-                        print(sentences[-2:])
                     elif term not in ['Eltern', 'Kinder', 'Cousins', 'Verwandten']:
                         tic()
                         sentences += [
@@ -668,7 +664,6 @@ def main():
                             for template in PLURAL_THING_TEMPLATES
                         ]
                         logging.info(toc())
-                        print(sentences[-2:])
             logging.info(toc())
             set_dict['examples'] = sentences
             gc.collect()

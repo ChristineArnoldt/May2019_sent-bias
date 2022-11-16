@@ -1,3 +1,4 @@
+# has to be run from scripts dir
 
 import requests
 URL = "https://raw.githubusercontent.com/jarinox/python-grammar-de/master/data/german.csv"

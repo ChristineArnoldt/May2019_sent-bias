@@ -24,4 +24,5 @@
 *.pdf
 *.bak
 *.zip
-/sentbias/glove_vectors_de
+/sentbias/glove_vectors_de/vectors.txt
+/scripts/data/german.csv

@@ -18,23 +18,10 @@ CTX_PARA = 'para'
 
 MODEL_SETS = {
     'overall': (
-        ('bow', ''),
-        ('infersent', ''),
-        ('gensen', 'version=nli_large_bothskip_parse,nli_large_bothskip'),
-        ('guse', ''),
-        ('elmo', 'time_combine=mean;layer_combine=add'),
-        ('openai', ''),
         ('bert', 'version=bert-base-german-cased,dbmdz/bert-base-german-cased,Geotrend/bert-base-de-cased'),
     ),
     '78': (
-        ('bow', ''),
-        ('gensen', 'version=nli_large_bothskip_parse,nli_large_bothskip'),
-        ('openai', ''),
         ('bert', 'version=bert-base-german-cased,dbmdz/bert-base-german-cased,Geotrend/bert-base-de-cased'),
-    ),
-    '345': (
-        ('bow', ''),
-        ('elmo', 'time_combine=mean;layer_combine=add'),
     ),
 }
 
@@ -48,8 +35,6 @@ TEST_SETS = {
         ('sent-weat3', 'C3: EA/AA Names', CTX_SENT),
         ('weat6', 'C6: M/F Names, Career', CTX_WORD),
         ('sent-weat6', 'C6: M/F Names, Career', CTX_SENT),
-        ('angry_black_woman_stereotype', 'ABW Stereotype', CTX_WORD),
-        ('sent-angry_black_woman_stereotype', 'ABW Stereotype', CTX_SENT),
         ('heilman_double_bind_competent_one_word', 'Double Bind: Competent', CTX_WORD),
         ('sent-heilman_double_bind_competent_one_word', 'Double Bind: Competent', CTX_SENT),
         ('heilman_double_bind_competent_one_sentence', 'Double Bind: Competent', CTX_SENT_UNBLEACHED),
@@ -63,35 +48,15 @@ TEST_SETS = {
         ('weat8', 'C8: Science/Arts, M/F', CTX_WORD),
         ('sent-weat8', 'C8: Science/Arts, M/F', CTX_SENT),
     ),
-    '345': (
-        ('weat3', 'C3: EA/AA Names (32/25)', CTX_WORD),
-        ('sent-weat3', 'C3: EA/AA Names (32/25 +)', CTX_SENT),
-        ('weat4', 'C4: EA/AA Names (16/25)', CTX_WORD),
-        ('sent-weat4', 'C4: EA/AA Names (16/25 +)', CTX_SENT),
-        ('weat5', 'C5: EA/AA Names (16/8)', CTX_WORD),
-        ('sent-weat5', 'C5: EA/AA Names (16/8 +)', CTX_SENT),
-    ),
     'caliskan': (
         ('weat1', 'C1: Flowers/Insects', CTX_WORD),
         ('sent-weat1', 'C1: Flowers/Insects', CTX_SENT),
-        ('weat2', 'C2: Instruments/Weapons', CTX_WORD),
-        ('sent-weat2', 'C2: Instruments/Weapons', CTX_SENT),
-        ('weat3', 'C3: EA/AA Names', CTX_WORD),
-        ('sent-weat3', 'C3: EA/AA Names', CTX_SENT),
-        ('weat4', 'C4: EA/AA Names', CTX_WORD),
-        ('sent-weat4', 'C4: EA/AA Names', CTX_SENT),
-        ('weat5', 'C5: EA/AA Names', CTX_WORD),
-        ('sent-weat5', 'C5: EA/AA Names', CTX_SENT),
         ('weat6', 'C6: M/F Names, Career', CTX_WORD),
         ('sent-weat6', 'C6: M/F Names, Career', CTX_SENT),
         ('weat7', 'C7: Math/Arts, M/F', CTX_WORD),
         ('sent-weat7', 'C7: Math/Arts, M/F', CTX_SENT),
         ('weat8', 'C8: Science/Arts, M/F', CTX_WORD),
         ('sent-weat8', 'C8: Science/Arts, M/F', CTX_SENT),
-        ('weat9', 'C9: Ment/Phys, Temp/Perm', CTX_WORD),
-        ('sent-weat9', 'C9: Ment/Phys, Temp/Perm', CTX_SENT),
-        ('weat10', 'C10: Young/Old Names', CTX_WORD),
-        ('sent-weat10', 'C10: Young/Old Names', CTX_SENT),
     ),
 }
 
