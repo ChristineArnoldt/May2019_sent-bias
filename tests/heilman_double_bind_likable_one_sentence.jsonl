@@ -2,53 +2,69 @@
   "targ1": {
     "category": "Male",
     "examples": [
-      "John is an engineer with superior technical skills.",
-      "Paul is an engineer with superior technical skills.",
-      "Mike is an engineer with superior technical skills.",
-      "Kevin is an engineer with superior technical skills.",
-      "Steve is an engineer with superior technical skills.",
-      "Greg is an engineer with superior technical skills.",
-      "Jeff is an engineer with superior technical skills.",
-      "Bill is an engineer with superior technical skills."
+      "Jan ist ein Ingenieur mit überragenden technischen Fähigkeiten.",
+      "Alexander ist ein Ingenieur mit überragenden technischen Fähigkeiten.",
+      "Michael ist ein Ingenieur mit überragenden technischen Fähigkeiten.",
+      "Christian ist ein Ingenieur mit überragenden technischen Fähigkeiten.",
+      "Peter ist ein Ingenieur mit überragenden technischen Fähigkeiten.",
+      "Thomas ist ein Ingenieur mit überragenden technischen Fähigkeiten.",
+      "Martin ist ein Ingenieur mit überragenden technischen Fähigkeiten.",
+      "Klaus ist ein Ingenieur mit überragenden technischen Fähigkeiten."
     ]
   },
   "targ2": {
     "category": "Female",
     "examples": [
-      "Amy is an engineer with superior technical skills.",
-      "Joan is an engineer with superior technical skills.",
-      "Lisa is an engineer with superior technical skills.",
-      "Sarah is an engineer with superior technical skills.",
-      "Diana is an engineer with superior technical skills.",
-      "Kate is an engineer with superior technical skills.",
-      "Ann is an engineer with superior technical skills.",
-      "Donna is an engineer with superior technical skills."
+      "Anna ist eine Ingenieurin mit überragenden technischen Fähigkeiten.",
+      "Maria ist eine Ingenieurin mit überragenden technischen Fähigkeiten.",
+      "Julia ist eine Ingenieurin mit überragenden technischen Fähigkeiten.",
+      "Katharina ist eine Ingenieurin mit überragenden technischen Fähigkeiten.",
+      "Eva ist eine Ingenieurin mit überragenden technischen Fähigkeiten.",
+      "Christina ist eine Ingenieurin mit überragenden technischen Fähigkeiten.",
+      "Monika ist eine Ingenieurin mit überragenden technischen Fähigkeiten.",
+      "Karin ist eine Ingenieurin mit überragenden technischen Fähigkeiten."
     ]
   },
   "attr1": {
     "category": "LikableNotHostile",
     "examples": [
-      "The engineer is agreeable.",
-      "The engineer is fair.",
-      "The engineer is honest.",
-      "The engineer is trustworthy.",
-      "The engineer is selfless.",
-      "The engineer is accommodating.",
-      "The engineer is likable.",
-      "The engineer is liked."
+      "Die Ingenieurin ist angenehm.",
+      "Der Ingenieur ist angenehm.",
+      "Die Ingenieurin ist fair.",
+      "Der Ingenieur ist fair.",
+      "Die Ingenieurin ist ehrlich.",
+      "Der Ingenieur ist ehrlich.",
+      "Die Ingenieurin ist vertrauenswürdig.",
+      "Der Ingenieur ist vertrauenswürdig.",
+      "Die Ingenieurin ist selbstlos.",
+      "Der Ingenieur ist selbstlos.",
+      "Die Ingenieurin ist entgegenkommend.",
+      "Der Ingenieur ist entgegenkommend.",
+      "Die Ingenieurin ist sympathisch.",
+      "Der Ingenieur ist sympathisch.",
+      "Die Ingenieurin ist beliebt.",
+      "Der Ingenieur ist beliebt."
     ]
   },
   "attr2": {
     "category": "UnlikableHostile",
     "examples": [
-      "The engineer is abrasive.",
-      "The engineer is conniving.",
-      "The engineer is manipulative.",
-      "The engineer is dishonest.",
-      "The engineer is selfish.",
-      "The engineer is pushy.",
-      "The engineer is unlikable.",
-      "The engineer is unliked."
+      "Die Ingenieurin ist grob.",
+      "Der Ingenieur ist grob.",
+      "Die Ingenieurin ist hinterhältig.",
+      "Der Ingenieur ist hinterhältig.",
+      "Die Ingenieurin ist manipulativ.",
+      "Der Ingenieur ist manipulativ.",
+      "Die Ingenieurin ist unehrlich.",
+      "Der Ingenieur ist unehrlich.",
+      "Die Ingenieurin ist egoistisch.",
+      "Der Ingenieur ist egoistisch.",
+      "Die Ingenieurin ist aufdringlich.",
+      "Der Ingenieur ist aufdringlich.",
+      "Die Ingenieurin ist unsympathisch.",
+      "Der Ingenieur ist unsympathisch.",
+      "Die Ingenieurin ist unbeliebt.",
+      "Der Ingenieur ist unbeliebt."
     ]
   }
 }

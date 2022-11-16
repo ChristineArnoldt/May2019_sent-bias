@@ -13,4 +13,4 @@ export TFHUB_CACHE_DIR=$SENTBIAS_ROOT/tfhub_cache
 export ALLENNLP_CACHE_ROOT=$SENTBIAS_ROOT/allennlp_cache
 export PYTORCH_PRETRAINED_BERT_CACHE=$SENTBIAS_ROOT/bert_cache
 suffix=".$(date '+%Y%m%d%H%M%S').${JOB_ID}"
-python sentbias/main.py -m bert --use_cpu --log_file log$suffix --results_path results.tsv$suffix --bert_version bert-base-cased
+python sentbias/main.py -m bert --use_cpu --log_file log$suffix --results_path results.tsv$suffix --bert_version bert-base-german-cased

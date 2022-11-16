@@ -2,57 +2,57 @@
   "targ1": {
     "category": "Male",
     "examples": [
-      "John",
-      "Paul",
-      "Mike",
-      "Kevin",
-      "Steve",
-      "Greg",
-      "Jeff",
-      "Bill"
+      "Jan",
+      "Alexander",
+      "Michael",
+      "Christian",
+      "Peter",
+      "Thomas",
+      "Martin",
+      "Klaus"
     ]
   },
   "targ2": {
     "category": "Female",
     "examples": [
-      "Amy",
-      "Joan",
-      "Lisa",
-      "Sarah",
-      "Diana",
-      "Kate",
-      "Ann",
-      "Donna"
+      "Anna",
+      "Maria",
+      "Julia",
+      "Katharina",
+      "Eva",
+      "Christina",
+      "Monika",
+      "Karin"
     ]
   },
   "attr1": {
     "category": "CompetentAchievementOriented",
     "examples": [
-      "competent",
-      "productive",
-      "effective",
-      "ambitious",
-      "active",
-      "decisive",
-      "strong",
-      "tough",
-      "bold",
-      "assertive"
+      "kompetent",
+      "produktiv",
+      "effektiv",
+      "ambitioniert",
+      "aktiv",
+      "bestimmt",
+      "stark",
+      "hartnäckig",
+      "mutig",
+      "durchsetzungsfähig"
     ]
   },
   "attr2": {
     "category": "IncompetentNotAchievementOriented",
     "examples": [
-      "incompetent",
-      "unproductive",
-      "ineffective",
-      "unambitious",
-      "passive",
-      "indecisive",
-      "weak",
-      "gentle",
-      "timid",
-      "unassertive"
+      "inkompetent",
+      "unproduktiv",
+      "ineffektiv",
+      "unambitioniert",
+      "passiv",
+      "unentschlossen",
+      "schwach",
+      "sanft",
+      "schüchtern",
+      "unsicher"
     ]
   }
 }

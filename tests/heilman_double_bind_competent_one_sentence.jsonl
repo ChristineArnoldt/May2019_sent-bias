@@ -2,57 +2,77 @@
   "targ1": {
     "category": "Male",
     "examples": [
-      "John is an engineer.",
-      "Paul is an engineer.",
-      "Mike is an engineer.",
-      "Kevin is an engineer.",
-      "Steve is an engineer.",
-      "Greg is an engineer.",
-      "Jeff is an engineer.",
-      "Bill is an engineer."
+      "Jan ist Ingenieur.",
+      "Alexander ist Ingenieur.",
+      "Michael ist Ingenieur.",
+      "Christian ist Ingenieur.",
+      "Peter ist Ingenieur.",
+      "Thomas ist Ingenieur.",
+      "Martin ist Ingenieur.",
+      "Klaus ist Ingenieur."
     ]
   },
   "targ2": {
     "category": "Female",
     "examples": [
-      "Amy is an engineer.",
-      "Joan is an engineer.",
-      "Lisa is an engineer.",
-      "Sarah is an engineer.",
-      "Diana is an engineer.",
-      "Kate is an engineer.",
-      "Ann is an engineer.",
-      "Donna is an engineer."
+      "Anna ist Ingenieurin.",
+      "Maria ist Ingenieurin.",
+      "Julia ist Ingenieurin.",
+      "Katharina ist Ingenieurin.",
+      "Eva ist Ingenieurin.",
+      "Christina ist Ingenieurin.",
+      "Monika ist Ingenieurin.",
+      "Karin ist Ingenieurin."
     ]
   },
   "attr1": {
     "category": "CompetentAchievementOriented",
     "examples": [
-      "The engineer is competent.",
-      "The engineer is productive.",
-      "The engineer is effective.",
-      "The engineer is ambitious.",
-      "The engineer is active.",
-      "The engineer is decisive.",
-      "The engineer is strong.",
-      "The engineer is tough.",
-      "The engineer is bold.",
-      "The engineer is assertive."
+      "Die Ingenieurin ist kompetent.",
+      "Der Ingenieur ist kompetent.",
+      "Die Ingenieurin ist produktiv.",
+      "Der Ingenieur ist produktiv.",
+      "Die Ingenieurin ist effektiv.",
+      "Der Ingenieur ist effektiv.",
+      "Die Ingenieurin ist ambitioniert.",
+      "Der Ingenieur ist ambitioniert.",
+      "Die Ingenieurin ist aktiv.",
+      "Der Ingenieur ist aktiv.",
+      "Die Ingenieurin ist bestimmt.",
+      "Der Ingenieur ist bestimmt.",
+      "Die Ingenieurin ist stark.",
+      "Der Ingenieur ist stark.",
+      "Die Ingenieurin ist hartnäckig.",
+      "Der Ingenieur ist hartnäckig.",
+      "Die Ingenieurin ist mutig.",
+      "Der Ingenieur ist mutig.",
+      "Die Ingenieurin ist durchsetzungsfähig.",
+      "Der Ingenieur ist durchsetzungsfähig."
     ]
   },
   "attr2": {
     "category": "IncompetentNotAchievementOriented",
     "examples": [
-      "The engineer is incompetent.",
-      "The engineer is unproductive.",
-      "The engineer is ineffective.",
-      "The engineer is unambitious.",
-      "The engineer is passive.",
-      "The engineer is indecisive.",
-      "The engineer is weak.",
-      "The engineer is gentle.",
-      "The engineer is timid.",
-      "The engineer is unassertive."
+      "Die Ingenieurin ist inkompetent.",
+      "Der Ingenieur ist inkompetent.",
+      "Die Ingenieurin ist unproduktiv.",
+      "Der Ingenieur ist unproduktiv.",
+      "Die Ingenieurin ist ineffektiv.",
+      "Der Ingenieur ist ineffektiv.",
+      "Die Ingenieurin ist unambitioniert.",
+      "Der Ingenieur ist unambitioniert.",
+      "Die Ingenieurin ist passiv.",
+      "Der Ingenieur ist passiv.",
+      "Die Ingenieurin ist unentschlossen.",
+      "Der Ingenieur ist unentschlossen.",
+      "Die Ingenieurin ist schwach.",
+      "Der Ingenieur ist schwach.",
+      "Die Ingenieurin ist sanft.",
+      "Der Ingenieur ist sanft.",
+      "Die Ingenieurin ist schüchtern.",
+      "Der Ingenieur ist schüchtern.",
+      "Die Ingenieurin ist unsicher.",
+      "Der Ingenieur ist unsicher."
     ]
   }
 }

@@ -387,7 +387,7 @@
 # Creative Commons is not a party to its public
 # licenses. Notwithstanding, Creative Commons may elect to apply one of
 # its public licenses to material it publishes and in those instances
-# will be considered the “Licensor.” The text of the Creative Commons
+# will be considered the ï¿½Licensor.ï¿½ The text of the Creative Commons
 # public licenses is dedicated to the public domain under the CC0 Public
 # Domain Dedication. Except for the limited purpose of indicating that
 # material is shared under a Creative Commons public license or as
@@ -477,7 +477,7 @@ class BLSTMEncoder(nn.Module):
         word_dict = {}
         if tokenize:
             from nltk.tokenize import word_tokenize
-        sentences = [s.split() if not tokenize else word_tokenize(s)
+        sentences = [s.split() if not tokenize else word_tokenize(s)#, language='german')
                      for s in sentences]
         for sent in sentences:
             for word in sent:
@@ -524,6 +524,8 @@ class BLSTMEncoder(nn.Module):
     def build_vocab(self, sentences, tokenize=True):
         assert hasattr(self, 'glove_path'), 'warning: \
             you need to set_glove_path(glove_path)'
+        #sentences_lower = [s.lower() for s in sentences]
+        #word_dict = self.get_word_dict(sentences_lower, tokenize)
         word_dict = self.get_word_dict(sentences, tokenize)
         self.word_vec = self.get_glove(word_dict)
         log.info('Vocab size : {0}'.format(len(self.word_vec)))
@@ -539,6 +541,8 @@ class BLSTMEncoder(nn.Module):
         assert hasattr(self, 'glove_path'), 'warning: \
             you need to set_glove_path(glove_path)'
         assert hasattr(self, 'word_vec'), 'build_vocab before updating it'
+        #sentences_lower = [s.lower() for s in sentences]
+        #word_dict = self.get_word_dict(sentences_lower, tokenize)
         word_dict = self.get_word_dict(sentences, tokenize)
 
         # keep only new words
@@ -566,10 +570,12 @@ class BLSTMEncoder(nn.Module):
 
     def encode(self, sentences, bsize=64, tokenize=True, verbose=False):
         tic = time.time()
+        #sentences_lower = [s.lower() for s in sentences]
         if tokenize:
             from nltk.tokenize import word_tokenize
         sentences = [['<s>'] + s.split() + ['</s>'] if not tokenize else
                      ['<s>'] + word_tokenize(s) + ['</s>'] for s in sentences]
+                     #['<s>'] + word_tokenize(s, language='german') + ['</s>'] for s in sentences_lower]
         n_w = np.sum([len(x) for x in sentences])
 
         # filters words without glove vectors
@@ -616,8 +622,10 @@ class BLSTMEncoder(nn.Module):
     def visualize(self, sent, tokenize=True):
         if tokenize:
             from nltk.tokenize import word_tokenize
+        #sent_lower = [s.lower() for s in sent]
 
         sent = sent.split() if not tokenize else word_tokenize(sent)
+        #sent = sent_lower.split() if not tokenize else word_tokenize(sent_lower, language='german')
         sent = [['<s>'] + [word for word in sent if word in self.word_vec] + ['</s>']]
 
         if ' '.join(sent[0]) == '<s> </s>':

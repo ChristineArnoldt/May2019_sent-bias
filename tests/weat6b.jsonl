@@ -2,53 +2,53 @@
   "targ1": {
     "category": "MaleTerms",
     "examples": [
-      "male",
-      "man",
-      "boy",
-      "brother",
-      "he",
-      "him",
-      "his",
-      "son"
+      "männlich",
+      "Mann",
+      "Junge",
+      "Bruder",
+      "er",
+      "ihm",
+      "seins",
+      "Sohn"
     ]
   },
   "targ2": {
     "category": "FemaleTerms",
     "examples": [
-      "female",
-      "woman",
-      "girl",
-      "sister",
-      "she",
-      "her",
-      "hers",
-      "daughter"
+      "weiblich",
+      "Frau",
+      "Mädchen",
+      "Schwester",
+      "sie",
+      "ihr",
+      "ihrs",
+      "Tochter"
     ]
   },
   "attr1": {
     "category": "Career",
     "examples": [
-      "executive",
-      "management",
-      "professional",
-      "corporation",
-      "salary",
-      "office",
-      "business",
-      "career"
+      "Führungskraft",
+      "Management",
+      "professionell",
+      "Unternehmen",
+      "Gehalt",
+      "Büro",
+      "Geschäft",
+      "Karriere"
     ]
   },
   "attr2": {
     "category": "Family",
     "examples": [
-      "home",
-      "parents",
-      "children",
-      "family",
-      "cousins",
-      "marriage",
-      "wedding",
-      "relatives"
+      "Haus",
+      "Eltern",
+      "Kinder",
+      "Familie",
+      "Cousins",
+      "Ehe",
+      "Hochzeit",
+      "Verwandte"
     ]
   }
 }

@@ -20,3 +20,8 @@
 .nfs*
 *.tab
 /results*
+*.png
+*.pdf
+*.bak
+*.zip
+/sentbias/glove_vectors_de

@@ -2,53 +2,53 @@
   "targ1": {
     "category": "Science",
     "examples": [
-      "science",
-      "technology",
-      "physics",
-      "chemistry",
+      "Wissenschaft",
+      "Technologie",
+      "Physik",
+      "Chemie",
       "Einstein",
       "NASA",
-      "experiment",
-      "astronomy"
+      "Experiment",
+      "Astronomie"
     ]
   },
   "targ2": {
     "category": "Arts",
     "examples": [
-      "poetry",
-      "art",
+      "Dichtkunst",
+      "Kunst",
       "Shakespeare",
-      "dance",
-      "literature",
-      "novel",
-      "symphony",
-      "drama"
+      "Tanz",
+      "Literatur",
+      "Roman",
+      "Symphonie",
+      "Schauspiel"
     ]
   },
   "attr1": {
     "category": "MaleNames",
     "examples": [
-      "John",
-      "Paul",
-      "Mike",
-      "Kevin",
-      "Steve",
-      "Greg",
-      "Jeff",
-      "Bill"
+      "Jan",
+      "Alexander",
+      "Michael",
+      "Christian",
+      "Peter",
+      "Thomas",
+      "Martin",
+      "Klaus"
     ]
   },
   "attr2": {
     "category": "FemaleNames",
     "examples": [
-      "Amy",
-      "Joan",
-      "Lisa",
-      "Sarah",
-      "Diana",
-      "Kate",
-      "Ann",
-      "Donna"
+      "Anna",
+      "Maria",
+      "Julia",
+      "Katharina",
+      "Eva",
+      "Christina",
+      "Monika",
+      "Karin"
     ]
   }
 }

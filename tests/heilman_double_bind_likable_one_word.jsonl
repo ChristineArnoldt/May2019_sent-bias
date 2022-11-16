@@ -2,53 +2,53 @@
   "targ1": {
     "category": "Male",
     "examples": [
-      "John",
-      "Paul",
-      "Mike",
-      "Kevin",
-      "Steve",
-      "Greg",
-      "Jeff",
-      "Bill"
+      "Jan",
+      "Alexander",
+      "Michael",
+      "Christian",
+      "Peter",
+      "Thomas",
+      "Martin",
+      "Klaus"
     ]
   },
   "targ2": {
     "category": "Female",
     "examples": [
-      "Amy",
-      "Joan",
-      "Lisa",
-      "Sarah",
-      "Diana",
-      "Kate",
-      "Ann",
-      "Donna"
+      "Anna",
+      "Maria",
+      "Julia",
+      "Katharina",
+      "Eva",
+      "Christina",
+      "Monika",
+      "Karin"
     ]
   },
   "attr1": {
     "category": "LikableNotHostile",
     "examples": [
-      "agreeable",
+      "angenehm",
       "fair",
-      "honest",
-      "trustworthy",
-      "selfless",
-      "accommodating",
-      "likable",
-      "liked"
+      "ehrlich",
+      "vertrauenswürdig",
+      "selbstlos",
+      "entgegenkommend",
+      "sympathisch",
+      "beliebt"
     ]
   },
   "attr2": {
     "category": "UnlikableHostile",
     "examples": [
-      "abrasive",
-      "conniving",
-      "manipulative",
-      "dishonest",
-      "selfish",
-      "pushy",
-      "unlikable",
-      "unliked"
+      "grob",
+      "hinterhältig",
+      "manipulativ",
+      "unehrlich",
+      "egoistisch",
+      "aufdringlich",
+      "unsympathisch",
+      "unbeliebt"
     ]
   }
 }

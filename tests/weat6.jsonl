@@ -2,53 +2,53 @@
   "targ1": {
     "category": "MaleNames",
     "examples": [
-      "John",
-      "Paul",
-      "Mike",
-      "Kevin",
-      "Steve",
-      "Greg",
-      "Jeff",
-      "Bill"
+      "Jan",
+      "Alexander",
+      "Michael",
+      "Christian",
+      "Peter",
+      "Thomas",
+      "Martin",
+      "Klaus"
     ]
   },
   "targ2": {
     "category": "FemaleNames",
     "examples": [
-      "Amy",
-      "Joan",
-      "Lisa",
-      "Sarah",
-      "Diana",
-      "Kate",
-      "Ann",
-      "Donna"
+      "Anna",
+      "Maria",
+      "Julia",
+      "Katharina",
+      "Eva",
+      "Christina",
+      "Monika",
+      "Karin"
     ]
   },
   "attr1": {
     "category": "Career",
     "examples": [
-      "executive",
-      "management",
-      "professional",
-      "corporation",
-      "salary",
-      "office",
-      "business",
-      "career"
+      "Führungskraft",
+      "Management",
+      "professionell",
+      "Unternehmen",
+      "Gehalt",
+      "Büro",
+      "Geschäft",
+      "Karriere"
     ]
   },
   "attr2": {
     "category": "Family",
     "examples": [
-      "home",
-      "parents",
-      "children",
-      "family",
-      "cousins",
-      "marriage",
-      "wedding",
-      "relatives"
+      "Haus",
+      "Eltern",
+      "Kinder",
+      "Familie",
+      "Cousins",
+      "Ehe",
+      "Hochzeit",
+      "Verwandten"
     ]
   }
 }

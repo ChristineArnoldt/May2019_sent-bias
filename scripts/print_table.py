@@ -24,13 +24,13 @@ MODEL_SETS = {
         ('guse', ''),
         ('elmo', 'time_combine=mean;layer_combine=add'),
         ('openai', ''),
-        ('bert', 'version=bert-large-cased'),
+        ('bert', 'version=bert-base-german-cased,dbmdz/bert-base-german-cased,Geotrend/bert-base-de-cased'),
     ),
     '78': (
         ('bow', ''),
         ('gensen', 'version=nli_large_bothskip_parse,nli_large_bothskip'),
         ('openai', ''),
-        ('bert', 'version=bert-large-cased'),
+        ('bert', 'version=bert-base-german-cased,dbmdz/bert-base-german-cased,Geotrend/bert-base-de-cased'),
     ),
     '345': (
         ('bow', ''),

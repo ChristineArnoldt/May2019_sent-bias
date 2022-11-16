@@ -2,53 +2,53 @@
   "targ1": {
     "category": "Math",
     "examples": [
-      "math",
-      "algebra",
-      "geometry",
-      "calculus",
-      "equations",
-      "computation",
-      "numbers",
-      "addition"
+      "Mathe",
+      "Algebra",
+      "Geometrie",
+      "Analysis",
+      "Gleichungen",
+      "Berechnung",
+      "Zahlen",
+      "Addition"
     ]
   },
   "targ2": {
     "category": "Arts",
     "examples": [
-      "poetry",
-      "art",
-      "dance",
-      "literature",
-      "novel",
-      "symphony",
-      "drama",
-      "sculpture"
+      "Dichtkunst",
+      "Kunst",
+      "Tanz",
+      "Literatur",
+      "Roman",
+      "Symphonie",
+      "Schauspiel",
+      "Skulptur"
     ]
   },
   "attr1": {
     "category": "MaleNames",
     "examples": [
-      "John",
-      "Paul",
-      "Mike",
-      "Kevin",
-      "Steve",
-      "Greg",
-      "Jeff",
-      "Bill"
+      "Jan",
+      "Alexander",
+      "Michael",
+      "Christian",
+      "Peter",
+      "Thomas",
+      "Martin",
+      "Klaus"
     ]
   },
   "attr2": {
     "category": "FemaleNames",
     "examples": [
-      "Amy",
-      "Joan",
-      "Lisa",
-      "Sarah",
-      "Diana",
-      "Kate",
-      "Ann",
-      "Donna"
+      "Anna",
+      "Maria",
+      "Julia",
+      "Katharina",
+      "Eva",
+      "Christina",
+      "Monika",
+      "Karin"
     ]
   }
 }

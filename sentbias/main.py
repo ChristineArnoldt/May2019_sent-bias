@@ -20,9 +20,9 @@ from data import (
 )
 import weat
 import encoders.bow as bow
-import encoders.infersent as infersent
-import encoders.gensen as gensen
-import encoders.elmo as elmo
+#import encoders.infersent as infersent
+#import encoders.gensen as gensen
+#import encoders.elmo as elmo
 import encoders.bert as bert
 
 
@@ -39,7 +39,7 @@ class ModelName(Enum):
 TEST_EXT = '.jsonl'
 MODEL_NAMES = [m.value for m in ModelName]
 GENSEN_VERSIONS = ["nli_large_bothskip", "nli_large_bothskip_parse", "nli_large_bothskip_2layer", "nli_large"]
-BERT_VERSIONS = ["bert-base-uncased", "bert-large-uncased", "bert-base-cased", "bert-large-cased"]
+BERT_VERSIONS = ["bert-base-german-cased","dbmdz/bert-base-german-cased","Geotrend/bert-base-de-cased"]
 
 
 def test_sort_key(test):
@@ -130,7 +130,7 @@ def handle_arguments(arguments):
 
     bert_group = parser.add_argument_group(ModelName.BERT.value, 'Options for BERT model')
     bert_group.add_argument('--bert_version', type=str, choices=BERT_VERSIONS,
-                            help="Version of BERT to use.", default="bert-large-cased")
+                            help="Version of BERT to use.", default="bert-base-german-cased")
 
     return parser.parse_args(arguments)
 
