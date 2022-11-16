@@ -1,6 +1,6 @@
 # sent-bias-german
 
-This is an adaptation of the code for the paper "[On Measuring Social Biases in Sentence Encoders](https://arxiv.org/abs/1903.10561)" by Chandler May, Alex Wang, Shikha Bordia, Samuel R. Bowman and Rachel Rudinger.
+This is an adaptation of the code for the paper "[On Measuring Social Biases in Sentence Encoders](https://arxiv.org/abs/1903.10561)" by Chandler May, Alex Wang, Shikha Bordia, Samuel R. Bowman and Rachel Rudinger to measure gender bias in german BERT.
 The original code can be found here: https://github.com/W4ngatang/sent-bias
 
 
