@@ -80,7 +80,7 @@ def handle_arguments(arguments):
     parser.add_argument('--use_cpu', action='store_true',
                         help='Use CPU to encode sentences.')
     bert_group = parser.add_argument_group(ModelName.BERT.value, 'Options for BERT model')
-    bert_group.add_argument('--bert_version', type=str, choices=BERT_VERSIONS,
+    bert_group.add_argument('--bert_version', type=str,
                             help="Version of BERT to use.", default="bert-base-german-cased")
 
     return parser.parse_args(arguments)

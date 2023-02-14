@@ -14,7 +14,7 @@ import csv
 import gc
 
 PERSON_RE = re.compile(
-    r'\b(?:Frau|Mann|Mädchen|weiblich|männlich|Junge|Schwester|Bruder|Tochter|Sohn|'
+    r'\b(?:Frau|Mann|Mädchen|Junge|Schwester|Bruder|Tochter|Sohn|'
     r'Mutter|Vater|Tante|Onkel|Großmutter|Großvater|Amerikaner)\b')
 
 OUTPUT_PREFIX = 'sent-'
@@ -124,6 +124,8 @@ ADJECTIVES = {
     'aufdringlich',
     'unsympathisch',
     'unbeliebt',
+    'weiblich',
+    'männlich'
 }
 
 MASS_NOUNS = {

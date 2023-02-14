@@ -42,7 +42,7 @@ Then activate the environment and add the remaining dependencies:
 source activate sentbias_german
 #conda install pytorch=0.4.1 cuda90 -c pytorch
 conda install tensorflow
-pip install allennlp gensim tensorflow-hub numpy scipy nltk spacy h5py scikit-learn german_nouns ttictoc gender-determinator Levenshtein
+pip install allennlp gensim tensorflow-hub || numpy scipy nltk spacy h5py scikit-learn || german_nouns ttictoc gender-determinator Levenshtein
 ```
 
 #### Environment postsetup
